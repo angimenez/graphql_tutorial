@@ -1,7 +1,7 @@
 export const resolvers = {
   Query: {
-    hello: () => "Maldito ",
-    greet: (root, { name, lastname = "Imbecil" }) =>
-      `Hola ${name} ${lastname}, hijo de re mil puta`,
+    hello: () => "Hello World! ",
+    greet: (root, { name, lastname = "" }) =>
+      `Hello ${name}${lastname ? " " + lastname : ""}, How are you?`,
   },
 };
